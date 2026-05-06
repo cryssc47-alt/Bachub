@@ -1,0 +1,179 @@
+.page-hero {
+  background: #185FA5;
+  padding: 0 0 40px;
+}
+
+.active {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.subiecte-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.subiect-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1.5px solid #e5e9f0;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.subiect-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.subiect-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #185FA5;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.subiect-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.subiect-desc {
+  font-size: 12px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.subject-header {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 14px;
+  border-left: 5px solid #185FA5;
+  background: #EBF3FC;
+}
+
+.subject-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #185FA5;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.subject-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.subject-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 48px 24px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1.5px dashed #c5d0de;
+}
+
+.coming-soon-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.coming-soon-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.coming-soon-sub {
+  font-size: 13px;
+  color: #777;
+}
+
+.gray-section {
+  background: #f0f4f8;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-header {
+  margin-bottom: 16px;
+}
+
+.category-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.blue-tag {
+  background: #E6F1FB;
+  color: #0C447C;
+}
+
+.purple-tag {
+  background: #EEEDFE;
+  color: #3C3489;
+}
+
+.red-tag {
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+
+.purple-accent {
+  border-left-color: #534AB7 !important;
+}
+
+.purple-badge {
+  background: #EEEDFE;
+  color: #3C3489;
+}
+
+.red-accent {
+  border-left-color: #A32D2D !important;
+}
+
+.red-badge {
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+
+.loading {
+  text-align: center;
+  padding: 24px;
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .subiecte-grid {
+    grid-template-columns: 1fr;
+  }
+}

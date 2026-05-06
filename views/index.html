@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BacHub - Materiale gratuite pentru bacalaureat. Eseuri, comentarii și ghiduri pentru română și istorie." />
+  <meta property="og:title" content="BacHub - Materiale Bacalaureat" />
+  <meta property="og:description" content="Eseuri, comentarii și ghiduri gratuite pentru bacalaureatul de română și istorie." />
+  <title>BacHub - Materiale Bacalaureat</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <span class="logo">BacHub</span>
+        <nav class="nav">
+          <a href="/">Acasă</a>
+          <a href="/romana">Română</a>
+          <a href="/istorie">Istorie</a>
+          <a href="/blog">Blog</a>
+          <a href="/despre">Despre</a>
+        </nav>
+      </div>
+      <h1 class="hero-title">Materiale pentru bacalaureat,<br/>într-un singur loc.</h1>
+      <p class="hero-subtitle">Eseuri, comentarii și ghiduri — gratuit, simplu, rapid.</p>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Caută un eseu, autor, temă..." />
+        <button onclick="handleSearch()">Caută</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBJECTS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Materii</h2>
+      <div class="subject-grid">
+        <a href="/romana" class="subject-card blue">
+          <div class="subject-icon">R</div>
+          <div>
+            <div class="subject-name">Română</div>
+            <div class="subject-desc">Eseuri, comentarii, structuri</div>
+          </div>
+        </a>
+        <a href="/istorie" class="subject-card green">
+          <div class="subject-icon">I</div>
+          <div>
+            <div class="subject-name">Istorie</div>
+            <div class="subject-desc">Lecții, eseuri, perioade istorice</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD SLOT 1 -->
+  <div class="container">
+    <div class="ad-slot">
+      <span>Publicitate</span>
+    </div>
+  </div>
+
+  <!-- SPLIT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="split-grid">
+        <!-- AD SLOT BETWEEN COLUMNS -->
+        <div class="ad-slot split-ad"><span>Publicitate</span></div>
+
+        <!-- LEFT: Opere esentiale -->
+        <div class="split-col">
+          <h2 class="section-title">Vizualizate recent</h2>
+          <div class="materials-list">
+            <a href="/romana/opera/ion" class="material-card blue-accent">
+              <div class="material-info">
+                <div class="material-title">Ion</div>
+                <div class="material-meta">Liviu Rebreanu · Roman interbelic realist obiectiv</div>
+              </div>
+              <span class="material-badge blue-badge">Română</span>
+            </a>
+            <a href="/romana/opera/morometii" class="material-card blue-accent">
+              <div class="material-info">
+                <div class="material-title">Moromeții</div>
+                <div class="material-meta">Marin Preda · Romanul postbelic</div>
+              </div>
+              <span class="material-badge blue-badge">Română</span>
+            </a>
+            <a href="/romana/opera/luceafarul" class="material-card blue-accent">
+              <div class="material-info">
+                <div class="material-title">Luceafărul</div>
+                <div class="material-meta">Mihai Eminescu · Poezia romantică</div>
+              </div>
+              <span class="material-badge blue-badge">Română</span>
+            </a>
+            <a href="/romana/opera/o-scrisoare-pierduta" class="material-card blue-accent">
+              <div class="material-info">
+                <div class="material-title">O Scrisoare Pierdută</div>
+                <div class="material-meta">I.L. Caragiale · Comedie</div>
+              </div>
+              <span class="material-badge blue-badge">Română</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Blog preview -->
+        <div class="split-col">
+          <h2 class="section-title">De pe blog</h2>
+          <div class="blog-list">
+            <div class="blog-card">
+              <div class="blog-tag">Sfaturi</div>
+              <div class="blog-title">Cum să înveți eficient pentru bacalaureat</div>
+              <div class="blog-meta">În curând</div>
+            </div>
+            <div class="blog-card">
+              <div class="blog-tag">Română</div>
+              <div class="blog-title">Top 5 greșeli la subiectul III</div>
+              <div class="blog-meta">În curând</div>
+            </div>
+            <div class="blog-card">
+              <div class="blog-tag">Istorie</div>
+              <div class="blog-title">Cum structurezi un eseu la istorie</div>
+              <div class="blog-meta">În curând</div>
+            </div>
+            <div class="blog-card">
+              <div class="blog-tag">Sfaturi</div>
+              <div class="blog-title">Ce să faci în săptămâna dinaintea examenului</div>
+              <div class="blog-meta">În curând</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- AD SLOT 2 -->
+  <div class="container">
+    <div class="ad-slot">
+      <span>Publicitate</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="logo">BacHub</span>
+      <p>© 2025 BacHub · Toate drepturile rezervate</p>
+      <nav class="footer-nav">
+        <a href="/despre">Despre</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-block {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e9f0;
+  padding: 32px;
+}
+
+.contact-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.contact-block h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.contact-block p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-block p:last-of-type {
+  margin-bottom: 16px;
+}
+
+.contact-block strong {
+  color: #185FA5;
+  font-weight: 600;
+}
+
+.email-btn {
+  display: inline-block;
+  background: #185FA5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.email-btn:hover {
+  background: #0e4a82;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+}
+
+.instagram-btn {
+  background: #E1306C;
+  color: #ffffff;
+}
+
+.tiktok-btn {
+  background: #1a1a2e;
+  color: #ffffff;
+}
+
+.encouragement-block {
+  border-left: 5px solid #185FA5;
+  background: #EBF3FC;
+}
+
+.suggest-btn {
+  display: inline-block;
+  background: #185FA5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 4px;
+}
+
+.suggest-btn:hover {
+  background: #0e4a82;
+}
+
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

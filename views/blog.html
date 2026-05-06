@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog BacHub — sfaturi de învățare, noutăți despre bacalaureat și ghiduri pentru elevi." />
+  <title>Blog — BacHub</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/romana.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="page-hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <span class="logo"><a href="/" style="color:white;text-decoration:none;">BacHub</a></span>
+        <nav class="nav">
+          <a href="/">Acasă</a>
+          <a href="/romana">Română</a>
+          <a href="/istorie">Istorie</a>
+          <a href="/blog" class="active">Blog</a>
+          <a href="/despre">Despre</a>
+        </nav>
+      </div>
+      <h1 class="hero-title">Blog</h1>
+      <p class="hero-subtitle">Sfaturi, strategii și noutăți pentru bacalaureatul tău.</p>
+    </div>
+  </header>
+
+  <!-- FILTER TABS -->
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-btn filter-active" onclick="filterPosts('toate', this)">Toate</button>
+      <button class="filter-btn" onclick="filterPosts('Sfaturi', this)">Sfaturi</button>
+      <button class="filter-btn" onclick="filterPosts('Noutăți', this)">Noutăți</button>
+    </div>
+  </div>
+
+  <!-- BLOG POSTS -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid" id="blog-grid">
+        <div class="loading">Se încarcă articolele...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD SLOT -->
+  <div class="container">
+    <div class="ad-slot"><span>Publicitate</span></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="logo">BacHub</span>
+      <p>© 2025 BacHub · Toate drepturile rezervate</p>
+      <nav class="footer-nav">
+        <a href="/despre">Despre</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/blog.js"></script>
+</body>
+</html>

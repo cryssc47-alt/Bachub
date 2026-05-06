@@ -1,0 +1,129 @@
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  padding: 24px 0 0;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1.5px solid #e5e9f0;
+  background: #ffffff;
+  color: #555;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #185FA5;
+  color: #185FA5;
+}
+
+.filter-active {
+  background: #185FA5 !important;
+  color: #ffffff !important;
+  border-color: #185FA5 !important;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.post-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e9f0;
+  padding: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+}
+
+.post-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-category-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #E6F1FB;
+  color: #0C447C;
+}
+
+.post-date {
+  font-size: 11px;
+  color: #999;
+}
+
+.post-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.4;
+}
+
+.post-card-excerpt {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.post-card-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #185FA5;
+}
+
+/* POST PAGE */
+.post-layout {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.post-article {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e9f0;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-article p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.post-article p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-article {
+    padding: 24px 20px;
+  }
+}
